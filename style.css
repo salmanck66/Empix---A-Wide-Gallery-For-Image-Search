@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header h1 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    transition: opacity 0.3s ease;
+}
+
+header:hover {
+    opacity: 0.8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#search-container {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+#search-bar {
+    width: 70%;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+    width: 100%; /* Adjusted width for the button */
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-results img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.search-results img:hover {
+    opacity: 0.8;
+}
+
+.search-results a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-results a:hover {
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+#show-more-btn {
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #search-bar {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #search-button {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px; /* Added margin for better spacing */
+    }
+
+    .search-results img {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    #show-more-btn {
+        margin-top: 10px;
+    }
+}
+footer {
+    border-top: 2px solid black;
+    background-color: #ffffff; /* Set to the same color as your header */
+    color: #000000; /* Text color for better contrast */
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer img {
+    width: 30px; /* Adjust the size of the GitHub logo as needed */
+    margin-top: 10px;
+}
+
+  
