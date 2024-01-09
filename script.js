@@ -17,6 +17,13 @@ async function searchImages() {
     if (page === 1) {
         searchResults.innerHTML = "";
     }
+    if (results.length === 0) {
+        const noResultsMessage = document.createElement('p');
+        noResultsMessage.textContent = 'No pictures found. Please try another search.';
+        searchResults.appendChild(noResultsMessage);
+        showMore.style.display = "none"; // Hide the 'Show More' button
+        return;
+    }
 
     results.forEach((result) => {
         const imageWrapper = document.createElement('div');
