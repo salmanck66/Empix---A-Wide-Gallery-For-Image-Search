@@ -28,6 +28,9 @@ async function searchImages() {
     results.forEach((result) => {
         const imageWrapper = document.createElement('div');
         imageWrapper.classList.add('result-item');
+        const a_link = document.createElement('a');
+        a_link.href = result.links.html;
+        a_link.target = '_blank';
         const image = document.createElement('img');
         image.src = result.urls.small;
         image.alt = result.alt_description;
@@ -36,8 +39,8 @@ async function searchImages() {
         imageLink.target = '_blank';
         imageLink.textContent = result.alt_description;
 
-        imageWrapper.appendChild(image);
-        imageWrapper.appendChild(imageLink);
+        imageWrapper.appendChild(a_link);
+        a_link.appendChild(image);
         searchResults.appendChild(imageWrapper); // Corrected this line
     });
 

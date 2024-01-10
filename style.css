@@ -58,6 +58,9 @@ header h1 {
 .search-results a {
     display: block;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: .8rem;
 }
 
 .search-results a:hover {
